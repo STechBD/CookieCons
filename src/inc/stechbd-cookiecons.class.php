@@ -18,9 +18,28 @@
  * The main plugin class file.
  */
 
+
 class CookieCons
 {
+    /**
+     * Plugin version.
+     * @var string
+     */
+
+    public string $version = '1.0.0';
+
     private function __construct()
+    {
+        // Code to run on plugin activation.
+    }
+
+
+    /**
+     * Plugin activation hook.
+     * @return bool
+     */
+
+    public static function activate(): bool
     {
         // Code to run on plugin activation.
     }
