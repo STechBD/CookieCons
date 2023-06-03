@@ -1,22 +1,22 @@
 {
-    "name": "stechbd/cookiecons",
-    "description": "A WordPress plugin to show cookie consent.",
-    "type": "project",
-    "license": "GPL",
-    "autoload":
-    {
-        "psr-4":
-        {
-            "STechBD\\CookieCons\\": "src/"
-        }
-    },
-    "authors":
-    [
-        {
-            "name": "S Technologies Limited",
-            "email": "product@stechbd.net"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {}
+  "name": "stechbd/cookiecons",
+  "description": "A WordPress plugin to show cookie consent.",
+  "type": "project",
+  "license": "GPL",
+  "autoload":
+  {
+	"psr-4":
+	{
+	  "STechBD\\CookieCons\\": "src/"
+	}
+  },
+  "authors":
+  [
+	{
+	  "name": "S Technologies Limited",
+	  "email": "product@stechbd.net"
+	}
+  ],
+  "minimum-stability": "stable",
+  "require": {}
 }
