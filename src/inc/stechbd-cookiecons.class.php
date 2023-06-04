@@ -33,6 +33,15 @@ class CookieCons
         // Code to run on plugin activation.
     }
 
+    /**
+     * Plugin initiation hook.
+     * @return void
+     */
+
+    public static function init(): void
+    {
+        new CookieCons();
+    }
 
     /**
      * Plugin activation hook.
