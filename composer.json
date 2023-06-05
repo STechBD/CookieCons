@@ -2,7 +2,7 @@
   "name": "stechbd/cookiecons",
   "description": "A WordPress plugin to show cookie consent.",
   "type": "project",
-  "license": "GPL",
+  "license": "GPLv2",
   "autoload":
   {
 	"psr-4":

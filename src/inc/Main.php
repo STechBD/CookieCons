@@ -19,7 +19,9 @@
  */
 
 
-class CookieCons
+namespace STechBD\CookieCons;
+
+class Main
 {
     /**
      * Plugin version.
@@ -35,12 +37,19 @@ class CookieCons
 
     /**
      * Plugin initiation hook.
-     * @return void
+     * @return Main
      */
 
-    public static function init(): void
+    public static function init(): Main
     {
-        new CookieCons();
+	    $instance = null;
+
+	    if(!$instance)
+		{
+			$instance = new self();
+		}
+
+		return $instance;
     }
 
     /**
