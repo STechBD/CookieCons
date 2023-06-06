@@ -27,19 +27,21 @@ class Main
      * Plugin version.
      * @var string
      */
+    public const version = '1.0.0';
 
-    public string $version = '1.0.0';
-
+    /**
+     * Class constructor.
+     */
     private function __construct()
     {
-        // Code to run on plugin activation.
+        register_activation_hook(STCC_PLUGIN_FILE, [$this, 'activate']);
+        add_action('plugins_loaded', [$this, 'init_plugin']);
     }
 
     /**
      * Plugin initiation hook.
      * @return Main
      */
-
     public static function init(): Main
     {
 	    $instance = null;
@@ -54,11 +56,17 @@ class Main
 
     /**
      * Plugin activation hook.
-     * @return bool
+     * @return void
      */
-
-    public static function activate(): bool
+    public static function activate(): void
     {
-        // Code to run on plugin activation.
+        $installed = get_option('stechbd_cookiecons_installed');
+
+        if(!$installed)
+        {
+            update_option('stechbd_cookiecons_installed', time());
+        }
+
+        update_option('stechbd_cookiecons_version', STCC_VERSION);
     }
 }

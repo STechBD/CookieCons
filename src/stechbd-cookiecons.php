@@ -28,69 +28,69 @@ if(!defined('ABSPATH'))
 
 // Define the plugin paths.
 
-if(!defined('STECHBD_COOKIECONS_PLUGIN'))
+if(!defined('STCC_PLUGIN'))
 {
-	define('STECHBD_COOKIECONS_PLUGIN', plugin_dir_path(__FILE__));
+	define('STCC_PLUGIN', plugin_dir_path(__FILE__));
 }
 
-if(!defined('STECHBD_COOKIECONS_INC'))
+if(!defined('STCC_INC'))
 {
-	define('STECHBD_COOKIECONS_INC', STECHBD_COOKIECONS_PLUGIN . 'inc/');
+	define('STCC_INC', STCC_PLUGIN . 'inc/');
 }
 
-if(!defined('STECHBD_COOKIECONS_ASSETS'))
+if(!defined('STCC_ASSETS'))
 {
-	define('STECHBD_COOKIECONS_ASSETS', STECHBD_COOKIECONS_PLUGIN . 'assets/');
+	define('STCC_ASSETS', STCC_PLUGIN . 'assets/');
 }
 
-if(!defined('STECHBD_COOKIECONS_ASSETS_CSS'))
+if(!defined('STCC_ASSETS_CSS'))
 {
-	define('STECHBD_COOKIECONS_ASSETS_CSS', STECHBD_COOKIECONS_ASSETS . 'css/');
+	define('STCC_ASSETS_CSS', STCC_ASSETS . 'css/');
 }
 
-if(!defined('STECHBD_COOKIECONS_ASSETS_JS'))
+if(!defined('STCC_ASSETS_JS'))
 {
-	define('STECHBD_COOKIECONS_ASSETS_JS', STECHBD_COOKIECONS_ASSETS . 'js/');
+	define('STCC_ASSETS_JS', STCC_ASSETS . 'js/');
 }
 
-if(!defined('STECHBD_COOKIECONS_ASSETS_IMG'))
+if(!defined('STCC_ASSETS_IMG'))
 {
-	define('STECHBD_COOKIECONS_ASSETS_IMG', STECHBD_COOKIECONS_ASSETS . 'img/');
+	define('STCC_ASSETS_IMG', STCC_ASSETS . 'img/');
 }
 
-if(!defined('STECHBD_COOKIECONS_ASSETS_FONTS'))
+if(!defined('STCC_ASSETS_FONTS'))
 {
-	define('STECHBD_COOKIECONS_ASSETS_FONTS', STECHBD_COOKIECONS_ASSETS . 'fonts/');
+	define('STCC_ASSETS_FONTS', STCC_ASSETS . 'fonts/');
 }
 
-if(!defined('STECHBD_COOKIECONS_ASSETS_VENDOR'))
+if(!defined('STCC_ASSETS_VENDOR'))
 {
-	define('STECHBD_COOKIECONS_ASSETS_VENDOR', STECHBD_COOKIECONS_ASSETS . 'vendor/');
+	define('STCC_ASSETS_VENDOR', STCC_ASSETS . 'vendor/');
 }
 
-if(!defined('STECHBD_COOKIECONS_ASSETS_VENDOR_CSS'))
+if(!defined('STCC_ASSETS_VENDOR_CSS'))
 {
-	define('STECHBD_COOKIECONS_ASSETS_VENDOR_CSS', STECHBD_COOKIECONS_ASSETS_VENDOR . 'css/');
+	define('STCC_ASSETS_VENDOR_CSS', STCC_ASSETS_VENDOR . 'css/');
 }
 
-if(!defined('STECHBD_COOKIECONS_ASSETS_VENDOR_JS'))
+if(!defined('STCC_ASSETS_VENDOR_JS'))
 {
-	define('STECHBD_COOKIECONS_ASSETS_VENDOR_JS', STECHBD_COOKIECONS_ASSETS_VENDOR . 'js/');
+	define('STCC_ASSETS_VENDOR_JS', STCC_ASSETS_VENDOR . 'js/');
 }
 
-if(!defined('STECHBD_COOKIECONS_ASSETS_VENDOR_IMG'))
+if(!defined('STCC_ASSETS_VENDOR_IMG'))
 {
-	define('STECHBD_COOKIECONS_ASSETS_VENDOR_IMG', STECHBD_COOKIECONS_ASSETS_VENDOR . 'img/');
+	define('STCC_ASSETS_VENDOR_IMG', STCC_ASSETS_VENDOR . 'img/');
 }
 
-if(!defined('STECHBD_COOKIECONS_ASSETS_VENDOR_FONTS'))
+if(!defined('STCC_ASSETS_VENDOR_FONTS'))
 {
-	define('STECHBD_COOKIECONS_ASSETS_VENDOR_FONTS', STECHBD_COOKIECONS_ASSETS_VENDOR . 'fonts/');
+	define('STCC_ASSETS_VENDOR_FONTS', STCC_ASSETS_VENDOR . 'fonts/');
 }
 
 // Include the main plugin class.
 
-require_once STECHBD_COOKIECONS_INC . 'Main.php';
+require_once STCC_INC . 'Main.php';
 
 // Initialize the plugin.
 
