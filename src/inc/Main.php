@@ -69,4 +69,15 @@ class Main
 
         update_option('stechbd_cookiecons_version', STCC_VERSION);
     }
+
+    /**
+     * Initialize the plugin.
+     * @return void
+     */
+    public function init_plugin(): void
+    {
+        new Assets();
+        new Admin();
+        new Frontend();
+    }
 }
