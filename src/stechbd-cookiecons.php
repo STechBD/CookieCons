@@ -26,8 +26,6 @@ if(!defined('ABSPATH'))
 	exit;
 }
 
-require_once __DIR__ . '/vendor/autoload.php';
-
 // Define the plugin paths.
 
 if(!defined('STCC_PLUGIN'))
@@ -89,6 +87,8 @@ if(!defined('STCC_ASSETS_VENDOR_FONTS'))
 {
 	define('STCC_ASSETS_VENDOR_FONTS', STCC_ASSETS_VENDOR . 'fonts/');
 }
+
+require_once STCC_INC . 'Main.php';
 
 // Initialize the plugin.
 

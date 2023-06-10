@@ -33,52 +33,20 @@ class Menu
 
 	/**
 	 * Plugin initiation hook.
-	 * @return Admin
+	 * @return void
 	 */
-	public static function init(): Admin
+	public static function init(): void
 	{
-	    $instance = null;
-
-	    if(!$instance)
-		{
-			$instance = new self();
-		}
-
-		return $instance;
+	    add_action('admin_menu', [__CLASS__, 'add_admin_menu']);
 	}
 
 	/**
 	 * Add admin menu.
 	 * @return void
 	 */
+
 	public function add_admin_menu(): void
 	{
-		add_menu_page(
-			'CookieCons',
-			'CookieCons',
-			'manage_options',
-			'stechbd-cookiecons',
-			[$this, 'admin_index'],
-			'dashicons-admin-generic',
-			110
-		);
-	}
-
-	/**
-	 * Admin index page.
-	 * @return void
-	 */
-	public function admin_index(): void
-	{
-		require_once STCC_INC . 'admin/admin-index.php';
-	}
-
-	/**
-	 * Register settings.
-	 * @return void
-	 */
-	public function register_settings(): void
-	{
-		register_setting('stechbd_cookiecons_settings', 'stechbd_cookiecons_settings');
+		add_menu_page(__('CookieCons Settings', 'stechbd-cookiecons'), __('CookieCons', 'stechbd-cookiecons'), 'manage_options', 'stechbd-cookiecons', [$this, 'admin_index'], 'dashicons-admin-generic');
 	}
 }
