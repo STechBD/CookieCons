@@ -15,6 +15,10 @@
 	{
 	  "name": "S Technologies Limited",
 	  "email": "product@stechbd.net"
+	},
+	{
+	  "name": "Md. Ashraful Alam Shemul",
+	  "email": "ceo@stechbd.net"
 	}
   ],
   "minimum-stability": "stable",

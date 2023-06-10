@@ -27,14 +27,14 @@ class Main
      * Plugin version.
      * @var string
      */
-    public const version = '1.0.0';
+    public const STCC_VERSION = '1.0.0';
 
     /**
      * Class constructor.
      */
     private function __construct()
     {
-        register_activation_hook(STCC_PLUGIN_FILE, [$this, 'activate']);
+        register_activation_hook(STCC_PLUGIN, [$this, 'activate']);
         add_action('plugins_loaded', [$this, 'init_plugin']);
     }
 
@@ -67,7 +67,7 @@ class Main
             update_option('stechbd_cookiecons_installed', time());
         }
 
-        update_option('stechbd_cookiecons_version', STCC_VERSION);
+        update_option('stechbd_cookiecons_version', self::STCC_VERSION);
     }
 
     /**
@@ -76,8 +76,8 @@ class Main
      */
     public function init_plugin(): void
     {
-        new Assets();
+        /*new Assets();
         new Admin();
-        new Frontend();
+        new Frontend();*/
     }
 }
