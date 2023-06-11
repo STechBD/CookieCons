@@ -21,6 +21,11 @@
 
 namespace STechBD\CookieCons;
 
+// Include all files
+
+require_once STCC_INC . 'Main.php';
+require_once STCC_INC . 'Admin/Menu.php';
+
 class Main
 {
     /**
