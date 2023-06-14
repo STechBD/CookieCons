@@ -21,6 +21,6 @@ class Settings
 {
 	public function __construct()
 	{
-		echo 'Settings - CookieCons';
+		echo '<h1>Settings - CookieCons</h1>';
 	}
 }
