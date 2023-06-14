@@ -25,19 +25,9 @@ class Menu
 	/**
 	 * Class constructor.
 	 */
-	private function __construct()
+	public function __construct()
 	{
 		add_action('admin_menu', [$this, 'add_admin_menu']);
-		add_action('admin_init', [$this, 'register_settings']);
-	}
-
-	/**
-	 * Plugin initiation hook.
-	 * @return void
-	 */
-	public static function init(): void
-	{
-	    add_action('admin_menu', [__CLASS__, 'add_admin_menu']);
 	}
 
 	/**
@@ -48,5 +38,15 @@ class Menu
 	public function add_admin_menu(): void
 	{
 		add_menu_page(__('CookieCons Settings', 'stechbd-cookiecons'), __('CookieCons', 'stechbd-cookiecons'), 'manage_options', 'stechbd-cookiecons', [$this, 'admin_index'], 'dashicons-admin-generic');
+	}
+
+	/**
+	 * Admin index page.
+	 * @return void
+	 */
+
+	public function admin_index(): void
+	{
+		new Settings();
 	}
 }

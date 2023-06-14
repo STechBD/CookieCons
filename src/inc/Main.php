@@ -11,7 +11,7 @@
  * Author URI: https://www.stechbd.net
  * Author Email: product@stechbd.net
  * Created: June 3, 2023
- * Updated: June 3, 2023
+ * Updated: June 15, 2023
  */
 
 /**
@@ -23,8 +23,7 @@ namespace STechBD\CookieCons;
 
 // Include all files
 
-require_once STCC_INC . 'Main.php';
-require_once STCC_INC . 'Admin/Menu.php';
+require_once ST_COOKIECONS_INC . 'Admin/Menu.php';
 
 class Main
 {
@@ -32,14 +31,14 @@ class Main
      * Plugin version.
      * @var string
      */
-    public const STCC_VERSION = '1.0.0';
+    public const ST_COOKIECONS_VERSION = '1.0.0';
 
     /**
      * Class constructor.
      */
     private function __construct()
     {
-        register_activation_hook(STCC_PLUGIN, [$this, 'activate']);
+        register_activation_hook(ST_COOKIECONS_PLUGIN, [$this, 'activate']);
         add_action('plugins_loaded', [$this, 'init_plugin']);
     }
 
@@ -72,7 +71,7 @@ class Main
             update_option('stechbd_cookiecons_installed', time());
         }
 
-        update_option('stechbd_cookiecons_version', self::STCC_VERSION);
+        update_option('stechbd_cookiecons_version', self::ST_COOKIECONS_VERSION);
     }
 
     /**
@@ -81,8 +80,6 @@ class Main
      */
     public function init_plugin(): void
     {
-        /*new Assets();
-        new Admin();
-        new Frontend();*/
+		new Admin\Menu();
     }
 }
