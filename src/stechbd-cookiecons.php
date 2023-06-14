@@ -17,6 +17,7 @@
  * Text Domain: stechbd-cookiecons
  * Domain Path: /languages
  * License: GPL v2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 
@@ -28,20 +29,20 @@ if(!defined('ABSPATH'))
 
 // Define the plugin paths.
 
-define('STCC_PLUGIN', plugin_dir_path(__FILE__));
-const STCC_INC = STCC_PLUGIN . 'inc/';
-const STCC_ASSETS = STCC_PLUGIN . 'assets/';
-const STCC_ASSETS_CSS = STCC_ASSETS . 'css/';
-const STCC_ASSETS_JS = STCC_ASSETS . 'js/';
-const STCC_ASSETS_IMG = STCC_ASSETS . 'img/';
-const STCC_ASSETS_FONTS = STCC_ASSETS . 'fonts/';
-const STCC_ASSETS_VENDOR = STCC_ASSETS . 'vendor/';
-const STCC_ASSETS_VENDOR_CSS = STCC_ASSETS_VENDOR . 'css/';
-const STCC_ASSETS_VENDOR_JS = STCC_ASSETS_VENDOR . 'js/';
-const STCC_ASSETS_VENDOR_IMG = STCC_ASSETS_VENDOR . 'img/';
-const STCC_ASSETS_VENDOR_FONTS = STCC_ASSETS_VENDOR . 'fonts/';
+define('ST_COOKIECONS_PLUGIN', plugin_dir_path(__FILE__));
+const ST_COOKIECONS_INC = ST_COOKIECONS_PLUGIN . 'inc/';
+const ST_COOKIECONS_ASSETS = ST_COOKIECONS_PLUGIN . 'assets/';
+const ST_COOKIECONS_ASSETS_CSS = ST_COOKIECONS_ASSETS . 'css/';
+const ST_COOKIECONS_ASSETS_JS = ST_COOKIECONS_ASSETS . 'js/';
+const ST_COOKIECONS_ASSETS_IMG = ST_COOKIECONS_ASSETS . 'img/';
+const ST_COOKIECONS_ASSETS_FONTS = ST_COOKIECONS_ASSETS . 'fonts/';
+const ST_COOKIECONS_ASSETS_VENDOR = ST_COOKIECONS_ASSETS . 'vendor/';
+const ST_COOKIECONS_ASSETS_VENDOR_CSS = ST_COOKIECONS_ASSETS_VENDOR . 'css/';
+const ST_COOKIECONS_ASSETS_VENDOR_JS = ST_COOKIECONS_ASSETS_VENDOR . 'js/';
+const ST_COOKIECONS_ASSETS_VENDOR_IMG = ST_COOKIECONS_ASSETS_VENDOR . 'img/';
+const ST_COOKIECONS_ASSETS_VENDOR_FONTS = ST_COOKIECONS_ASSETS_VENDOR . 'fonts/';
 
-require_once STCC_INC . 'Main.php';
+require_once ST_COOKIECONS_INC . 'Main.php';
 
 // Initialize the plugin.
 
