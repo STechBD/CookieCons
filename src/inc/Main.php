@@ -86,5 +86,9 @@ class Main
 		{
 			new Admin\Menu();
 		}
+		else
+		{
+			new Frontend\Notice();
+		}
     }
 }

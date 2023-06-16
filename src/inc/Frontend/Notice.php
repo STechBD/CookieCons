@@ -14,6 +14,7 @@
  * Updated: June 8, 2023
  */
 
+
 namespace STechBD\CookieCons\Frontend;
 
 /**
@@ -21,5 +22,20 @@ namespace STechBD\CookieCons\Frontend;
  */
 class Notice
 {
-	// To be added later.
+	/**
+	 * Class constructor.
+	 */
+	public function __construct()
+	{
+		add_action('wp_footer', [$this, 'add_notice']);
+	}
+
+	/**
+	 * Add notice.
+	 * @return void
+	 */
+	public function add_notice(): void
+	{
+		echo '<h1>Notice - CookieCons</h1>';
+	}
 }
