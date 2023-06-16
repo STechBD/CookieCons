@@ -19,7 +19,6 @@ namespace STechBD\CookieCons\Admin;
 /**
  * The admin panel class file.
  */
-
 class Menu
 {
 	/**

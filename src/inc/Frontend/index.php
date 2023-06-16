@@ -10,20 +10,9 @@
  * Author: S Technologies Limited
  * Author URI: https://www.stechbd.net
  * Author Email: product@stechbd.net
- * Created: June 15, 2023
+ * Created: June 16, 2023
  * Updated: June 16, 2023
  */
 
 
-namespace STechBD\CookieCons\Admin;
-
-/**
- * The admin page class file.
- */
-class Settings
-{
-	public function __construct()
-	{
-		echo '<h1>Settings - CookieCons</h1>';
-	}
-}
+die('<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>');

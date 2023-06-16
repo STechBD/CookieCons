@@ -11,7 +11,7 @@
  * Author URI: https://www.stechbd.net
  * Author Email: product@stechbd.net
  * Created: June 3, 2023
- * Updated: June 15, 2023
+ * Updated: June 16, 2023
  */
 
 /**
@@ -29,9 +29,11 @@ class Main
 {
     /**
      * Plugin version.
-     * @var string
+     * @const string
+     * @const string
      */
     public const ST_COOKIECONS_VERSION = '1.0.0';
+    public const ST_COOKIECONS_VERSION_CODE = '1';
 
     /**
      * Class constructor.
@@ -80,6 +82,9 @@ class Main
      */
     public function init_plugin(): void
     {
-		new Admin\Menu();
+		if(is_admin())
+		{
+			new Admin\Menu();
+		}
     }
 }

@@ -17,4 +17,5 @@
 
 require_once ST_COOKIECONS_INC . 'Main.php';
 require_once ST_COOKIECONS_ADMIN . 'Settings.php';
+require_once ST_COOKIECONS_FE . 'Notice.php';
 require_once ST_COOKIECONS_ADMIN . 'Menu.php';
