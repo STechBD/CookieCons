@@ -24,6 +24,27 @@ class Settings
 {
 	public function __construct()
 	{
-		echo '<h1>Settings - CookieCons</h1>';
+		echo '<div class="wrap">
+				<h1>' . _e('Settings - CookieCons', 'stechbd-cookiecons') . '</h1>
+				<div id="ajax-response"></div>
+				<p>' . _e('Put your custom notice for cookie policy.', 'stechbd-cookiecons') . '</p>
+				<form method="post" name="createuser" id="createuser" class="validate" novalidate="novalidate">
+					<table class="form-table" role="presentation">
+						<tbody>
+						<tr class="form-field form-required">
+							<td>
+								<label for="notice">' . _e('Custom Notice', 'stechbd-cookiecons') . ' <span class="description">(' . _e('optional', 'stechbd-cookiecons') . ')</span></label>
+							</td>
+							<td>
+								<textarea name="notice" type="text" id="notice" aria-required="true" maxlength="60">
+									This website uses cookies to improve your experience. <a href="' . get_site_url() . '/privacy-policy/">Learn More</a>
+								</textarea>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					<p class="submit"><input type="submit" name="submitNotice" id="submitNotice" class="button button-primary" value="Save"></p>
+				</form>
+			</div>';
 	}
 }
