@@ -84,11 +84,11 @@ class Main
     {
 		if(is_admin())
 		{
-			new Admin\Menu();
+			new Admin();
 		}
 		else
 		{
-			new Frontend\Notice();
+			new Frontend();
 		}
     }
 }
