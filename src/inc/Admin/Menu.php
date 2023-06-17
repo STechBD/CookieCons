@@ -26,6 +26,7 @@ class Menu
 	 */
 	public function __construct()
 	{
+		$this -> dispatch_actions();
 		add_action('admin_menu', [$this, 'add_admin_menu']);
 	}
 
@@ -33,7 +34,6 @@ class Menu
 	 * Add admin menu.
 	 * @return void
 	 */
-
 	public function add_admin_menu(): void
 	{
 		add_menu_page(__('CookieCons Settings', 'stechbd-cookiecons'), __('CookieCons', 'stechbd-cookiecons'), 'manage_options', 'stechbd-cookiecons', [$this, 'admin_index'], 'dashicons-admin-generic');
@@ -43,9 +43,17 @@ class Menu
 	 * Admin index page.
 	 * @return void
 	 */
-
 	public function admin_index(): void
 	{
 		new Settings();
+	}
+
+	/**
+	 * Dispatch actions.
+	 * @return void
+	 */
+	public function dispatch_actions(): void
+	{
+		add_action('admin_init', [new Settings(), 'form_handler']);
 	}
 }

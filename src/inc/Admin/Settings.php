@@ -52,5 +52,7 @@ class Settings
 		}
 
 		$settings = get_option('st_cookiecons_settings', []);
+
+		var_dump($_POST);
 	}
 }
