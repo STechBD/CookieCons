@@ -84,11 +84,11 @@ class Main
     {
 		if(is_admin())
 		{
-			new Admin();
+			new Admin\Init();
 		}
 		else
 		{
-			new Frontend();
+			new Frontend\Init();
 		}
     }
 }

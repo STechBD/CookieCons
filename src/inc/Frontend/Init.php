@@ -20,7 +20,7 @@ namespace STechBD\CookieCons\Frontend;
 /**
  * The admin panel class file.
  */
-class Frontend
+class Init
 {
 	/**
 	 * Class constructor.
