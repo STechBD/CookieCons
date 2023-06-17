@@ -45,7 +45,8 @@ class Menu
 	 */
 	public function admin_index(): void
 	{
-		new Settings();
+		$settings = new Settings();
+		$settings -> settings_page();
 	}
 
 	/**
@@ -54,6 +55,7 @@ class Menu
 	 */
 	public function dispatch_actions(): void
 	{
-		add_action('admin_init', [new Settings(), 'form_handler']);
+		$settings = new Settings();
+		add_action('admin_init', [$settings, 'form_handler']);
 	}
 }

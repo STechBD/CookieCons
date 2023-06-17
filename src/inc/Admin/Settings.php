@@ -23,9 +23,10 @@ namespace STechBD\CookieCons\Admin;
 class Settings
 {
 	/**
-	 * Class constructor.
+	 * Settings page.
+	 * @return void
 	 */
-	public function __construct()
+	public function settings_page(): void
 	{
 		require_once ST_COOKIECONS_ADMIN . 'View/Settings.php';
 	}

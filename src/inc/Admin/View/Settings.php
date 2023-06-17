@@ -15,6 +15,13 @@
  */
 
 
+// Exit if accessed directly.
+if(!defined('ABSPATH'))
+{
+	exit;
+}
+
+
 ?>
 <div class="wrap">
 	<h1><?php _e('Settings - CookieCons', 'stechbd-cookiecons') ?></h1>
