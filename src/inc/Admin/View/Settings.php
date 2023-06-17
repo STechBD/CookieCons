@@ -27,7 +27,7 @@ if(!defined('ABSPATH'))
 	<h1><?php _e('Settings - CookieCons', 'stechbd-cookiecons') ?></h1>
 	<div id="ajax-response"></div>
 	<p><?php _e('Put your custom notice for cookie policy.', 'stechbd-cookiecons') ?></p>
-	<form method="post" name="notice" id="notice" class="validate">
+	<form method="post" name="notice" id="notice" class="validate" action="#">
 		<table class="form-table" role="presentation">
 			<tbody>
 			<tr class="form-field form-required">
@@ -43,6 +43,6 @@ if(!defined('ABSPATH'))
 			</tbody>
 		</table>
 		<?php wp_nonce_field('stechbd-cookiecons') ?>
-		<?php submit_button(__('Save', 'stechbd-cookiecons'), 'submitNotice', 'button-primary') ?>
+		<?php submit_button(__('Save', 'stechbd-cookiecons'), 'button-primary', 'submitNotice') ?>
 	</form>
 </div>

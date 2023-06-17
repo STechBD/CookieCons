@@ -37,23 +37,21 @@ class Settings
 	 */
 	public function form_handler(): void
 	{
-		if(!isset($_POST['submit']))
+		if(!isset($_POST['submitNotice']))
 		{
 			return;
 		}
 
-		if(!wp_verify_nonce($_POST['_wpnonce'], 'st_cookiecons_settings'))
+		if(!wp_verify_nonce($_POST['_wpnonce'], 'stechbd-cookiecons'))
 		{
-			wp_die( '<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>', 'Error' );
+			wp_die( '<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>', 'CookieCons Error' );
 		}
 
 		if(!current_user_can('manage_options'))
 		{
-			wp_die( '<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>', 'Error' );
+			wp_die( '<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>', 'CookieCons Error' );
 		}
 
 		$settings = get_option('st_cookiecons_settings', []);
-
-		var_dump($_POST);
 	}
 }
