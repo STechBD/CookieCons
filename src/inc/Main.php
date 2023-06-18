@@ -21,33 +21,28 @@
 
 namespace STechBD\CookieCons;
 
-// Include all files
-
-require_once ST_COOKIECONS_INC . 'Admin/Menu.php';
-
+/**
+ * The main plugin class.
+ */
 class Main
 {
     /**
-     * Plugin version.
-     * @const string
-     * @const string
-     */
-    public const ST_COOKIECONS_VERSION = '1.0.0';
-    public const ST_COOKIECONS_VERSION_CODE = '1';
-
-    /**
      * Class constructor.
+     * @return void
+     * @since 1.0.0
      */
     private function __construct()
     {
-        register_activation_hook(ST_COOKIECONS_PLUGIN, [$this, 'activate']);
+        register_activation_hook(ST_COOKIECONS_FILE, [$this, 'activate']);
+		register_deactivation_hook(ST_COOKIECONS_FILE, [$this, 'deactivate']);
         add_action('plugins_loaded', [$this, 'init_plugin']);
     }
 
-    /**
-     * Plugin initiation hook.
-     * @return Main
-     */
+	/**
+	 * Plugin initiation hook.
+	 * @return Main
+	 * @since 1.0.0
+	 */
     public static function init(): Main
     {
 	    $instance = null;
@@ -63,30 +58,37 @@ class Main
     /**
      * Plugin activation hook.
      * @return void
+     * @since 1.0.0
      */
-    public static function activate(): void
+    public function activate(): void
     {
         $installed = get_option('stechbd_cookiecons_installed');
+		$noticeValue = '3 - This website uses cookies to improve your experience. <a href="' . get_site_url() . '/privacy-policy/">Learn More</a>';
 
         if(!$installed)
         {
             update_option('stechbd_cookiecons_installed', time());
         }
 
-        update_option('stechbd_cookiecons_version', self::ST_COOKIECONS_VERSION);
-        update_option('stechbd_cookiecons_version_code', self::ST_COOKIECONS_VERSION_CODE);
-
-	    $notice = get_option('stechbd_cookiecons_notice');
-
-	    if(!$notice)
-	    {
-		    add_option('stechbd_cookiecons_notice', $_POST['notice']);
-	    }
+        update_option('stechbd_cookiecons_version', ST_COOKIECONS_VERSION);
+        update_option('stechbd_cookiecons_version_code', ST_COOKIECONS_VERSION_CODE);
+		add_option('stechbd_cookiecons_notice', $noticeValue);
     }
+
+	/**
+	 * Plugin deactivation hook.
+	 * @return void
+	 * @since 1.0.0
+	 */
+	public function deactivate(): void
+	{
+		delete_option('stechbd_cookiecons_notice');
+	}
 
     /**
      * Initialize the plugin.
      * @return void
+     * @since 1.0.0
      */
     public function init_plugin(): void
     {

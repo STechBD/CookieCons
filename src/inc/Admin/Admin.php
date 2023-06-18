@@ -10,33 +10,23 @@
  * Author: S Technologies Limited
  * Author URI: https://www.stechbd.net
  * Author Email: product@stechbd.net
- * Created: June 8, 2023
- * Updated: June 8, 2023
+ * Created: June 17, 2023
+ * Updated: June 17, 2023
  */
 
 
-namespace STechBD\CookieCons\Frontend;
+namespace STechBD\CookieCons\Admin;
 
 /**
- * The frontend notice class file.
+ * The admin panel class file.
  */
-class Notice
+class Admin
 {
 	/**
 	 * Class constructor.
 	 */
 	public function __construct()
 	{
-		add_action('wp_footer', [$this, 'notice']);
-	}
-
-	/**
-	 * Add notice.
-	 * @return void
-	 */
-	public function notice(): void
-	{
-		$notice = get_option('stechbd_cookiecons_notice');
-		echo '<h1>Notice: ' . $notice . '</h1>';
+		new Menu();
 	}
 }
