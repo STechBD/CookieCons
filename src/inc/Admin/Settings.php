@@ -52,6 +52,15 @@ class Settings
 			wp_die( '<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>', 'CookieCons Error' );
 		}
 
-		$settings = get_option('st_cookiecons_settings', []);
+		$notice = get_option('stechbd_cookiecons_notice');
+
+		if(!$notice)
+		{
+			add_option('stechbd_cookiecons_notice', $_POST['notice']);
+		}
+		else
+		{
+			update_option('stechbd_cookiecons_notice', $_POST['notice']);
+		}
 	}
 }

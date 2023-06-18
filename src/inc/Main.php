@@ -74,6 +74,14 @@ class Main
         }
 
         update_option('stechbd_cookiecons_version', self::ST_COOKIECONS_VERSION);
+        update_option('stechbd_cookiecons_version_code', self::ST_COOKIECONS_VERSION_CODE);
+
+	    $notice = get_option('stechbd_cookiecons_notice');
+
+	    if(!$notice)
+	    {
+		    add_option('stechbd_cookiecons_notice', $_POST['notice']);
+	    }
     }
 
     /**

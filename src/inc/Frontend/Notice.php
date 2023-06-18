@@ -27,15 +27,16 @@ class Notice
 	 */
 	public function __construct()
 	{
-		add_action('wp_footer', [$this, 'add_notice']);
+		add_action('wp_footer', [$this, 'notice']);
 	}
 
 	/**
 	 * Add notice.
 	 * @return void
 	 */
-	public function add_notice(): void
+	public function notice(): void
 	{
-		echo '<h1>Notice - CookieCons</h1>';
+		$notice = get_option('stechbd_cookiecons_notice');
+		echo '<h1>' . $notice . '</h1>';
 	}
 }
