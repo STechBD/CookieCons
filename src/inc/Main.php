@@ -63,6 +63,7 @@ class Main
     public function activate(): void
     {
         $installed = get_option('stechbd_cookiecons_installed');
+		$notice = get_option('stechbd_cookiecons_notice');
 		$noticeValue = '3 - This website uses cookies to improve your experience. <a href="' . get_site_url() . '/privacy-policy/">Learn More</a>';
 
         if(!$installed)
@@ -72,7 +73,12 @@ class Main
 
         update_option('stechbd_cookiecons_version', ST_COOKIECONS_VERSION);
         update_option('stechbd_cookiecons_version_code', ST_COOKIECONS_VERSION_CODE);
-		add_option('stechbd_cookiecons_notice', $noticeValue);
+
+		if(!$notice)
+		{
+			add_option('stechbd_cookiecons_notice', $noticeValue);
+		}
+
     }
 
 	/**
@@ -82,7 +88,7 @@ class Main
 	 */
 	public function deactivate(): void
 	{
-		delete_option('stechbd_cookiecons_notice');
+		// To be added later.
 	}
 
     /**
