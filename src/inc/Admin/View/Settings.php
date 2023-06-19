@@ -43,6 +43,6 @@ if(!defined('ABSPATH'))
 			</tbody>
 		</table>
 		<?php wp_nonce_field('stechbd-cookiecons') ?>
-		<?php submit_button(__('Save', 'stechbd-cookiecons'), 'button-primary', 'notice') ?>
+		<?php submit_button(__('Save', 'stechbd-cookiecons'), 'button-primary', 'submitNotice') ?>
 	</form>
 </div>

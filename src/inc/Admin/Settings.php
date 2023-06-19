@@ -44,15 +44,21 @@ class Settings
 
 		if(!wp_verify_nonce($_POST['_wpnonce'], 'stechbd-cookiecons'))
 		{
-			wp_die( '<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>', 'CookieCons Error' );
+			wp_die('<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>', 'CookieCons Error');
 		}
 
 		if(!current_user_can('manage_options'))
 		{
-			wp_die( '<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>', 'CookieCons Error' );
+			wp_die('<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>', 'CookieCons Error');
 		}
 
-		$notice = get_option('stechbd_cookiecons_notice');
+		$notice = $_POST['notice'];
+
+		if(!empty($notice))
+		{
+			update_option('stechbd_cookiecons_notice', $notice);
+			return;
+		}
 
 		if(!$notice)
 		{
