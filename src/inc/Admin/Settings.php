@@ -50,7 +50,7 @@ class Settings
 			}
 
 			$notice = get_option('stechbd_cookiecons_notice');
-			$noticeVal = $_POST['notice'];
+			$noticeVal = wp_unslash($_POST['notice']);
 
 			if(!empty($noticeVal))
 			{
@@ -60,7 +60,7 @@ class Settings
 				}
 				else
 				{
-					update_option('stechbd_cookiecons_notice', $_POST['notice']);
+					update_option('stechbd_cookiecons_notice', $noticeVal);
 					add_settings_error('stechbd-cookiecons', 'success', 'Notice updated successfully!', 'updated');
 				}
 			}
