@@ -24,10 +24,12 @@ if(!defined('ABSPATH'))
 
 ?>
 <div class="wrap">
-	<h1><?php _e('Settings - CookieCons', 'stechbd-cookiecons') ?></h1>
+	<h1 class="wp-heading-inline"><?php _e('Settings - CookieCons', 'stechbd-cookiecons') ?></h1>
+	<hr class="wp-header-end">
+	<?php settings_errors('stechbd-cookiecons') ?>
 	<div id="ajax-response"></div>
 	<p><?php _e('Put your custom notice for cookie policy.', 'stechbd-cookiecons') ?></p>
-	<form method="post" name="notice" id="notice" class="validate" action="#">
+	<form method="post" name="notice" id="notice" class="validate">
 		<table class="form-table" role="presentation">
 			<tbody>
 			<tr class="form-field form-required">
@@ -36,7 +38,7 @@ if(!defined('ABSPATH'))
 				</th>
 				<td>
 					<label>
-						<textarea placeholder="This website uses cookies to improve your experience. &lt;a href=&quot;<?php get_site_url() ?>/privacy-policy/&quot;&gt;Learn More&lt;/a&gt;" rows="4" cols="70" id="notice" name="notice"><?php get_option('stechbd_cookiecons_notice') ?></textarea>
+						<textarea placeholder="This website uses cookies to improve your experience. &lt;a href=&quot;<?php get_site_url() ?>/privacy-policy/&quot;&gt;Learn More&lt;/a&gt;" rows="4" cols="70" id="notice" name="notice"><?= get_option('stechbd_cookiecons_notice') ?></textarea>
 					</label>
 				</td>
 			</tr>
