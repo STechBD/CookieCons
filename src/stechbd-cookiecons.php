@@ -13,7 +13,7 @@
  * Tested up to: 6.2.2
  * Requires PHP: 8.0
  * Created: June 3, 2023
- * Updated: June 15, 2023
+ * Updated: June 21, 2023
  * Text Domain: stechbd-cookiecons
  * Domain Path: /languages
  * License: GPL v2 or later
@@ -47,11 +47,10 @@ const ST_COOKIECONS_FILE = __FILE__;
 const ST_COOKIECONS_INC = ST_COOKIECONS_PLUGIN . 'inc/';
 const ST_COOKIECONS_ADMIN = ST_COOKIECONS_INC . 'Admin/';
 const ST_COOKIECONS_FE = ST_COOKIECONS_INC . 'Frontend/';
-const ST_COOKIECONS_ASSETS = ST_COOKIECONS_PLUGIN . 'assets/';
-const ST_COOKIECONS_ASSETS_CSS = ST_COOKIECONS_ASSETS . 'css/';
-const ST_COOKIECONS_ASSETS_JS = ST_COOKIECONS_ASSETS . 'js/';
-const ST_COOKIECONS_ASSETS_IMG = ST_COOKIECONS_ASSETS . 'img/';
-const ST_COOKIECONS_ASSETS_FONTS = ST_COOKIECONS_ASSETS . 'fonts/';
+const ST_COOKIECONS_ASSET = ST_COOKIECONS_PLUGIN . 'asset/';
+const ST_COOKIECONS_CSS = ST_COOKIECONS_ASSET . 'css/';
+const ST_COOKIECONS_JS = ST_COOKIECONS_ASSET . 'js/';
+const ST_COOKIECONS_IMG = ST_COOKIECONS_ASSET . 'img/';
 const ST_COOKIECONS_VERSION = '1.0.0';
 const ST_COOKIECONS_VERSION_CODE = '1';
 

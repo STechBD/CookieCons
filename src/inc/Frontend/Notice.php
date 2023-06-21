@@ -11,7 +11,7 @@
  * Author URI: https://www.stechbd.net
  * Author Email: product@stechbd.net
  * Created: June 8, 2023
- * Updated: June 8, 2023
+ * Updated: June 21, 2023
  */
 
 
@@ -36,7 +36,6 @@ class Notice
 	 */
 	public function notice(): void
 	{
-		$notice = get_option('stechbd_cookiecons_notice');
-		echo '<h1>Notice: ' . $notice . '</h1>';
+		require_once ST_COOKIECONS_FE . 'View/Notice.php';
 	}
 }
