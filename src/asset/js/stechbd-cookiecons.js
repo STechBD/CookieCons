@@ -1,3 +1,17 @@
+/**
+ * Plugin Name: CookieCons by STechBD.Net
+ * Plugin URI: https://project.stechbd.net/cookiecons/
+ * Description: CookieCons is a simple and lightweight cookie consent manager for WordPress.
+ * Version: 1.0.0
+ * Version Code: 1
+ * Author: S Technologies Limited
+ * Author URI: https://www.stechbd.net
+ * Author Email: product@stechbd.net
+ * Created: June 22, 2023
+ * Updated: June 23, 2023
+ */
+
+
 jQuery(document).ready(function($) {
     // Retrieve the value of the cookie
     var cookieValue = getCookie('stechbd-cookiecons');
