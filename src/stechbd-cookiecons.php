@@ -43,6 +43,7 @@ if(!defined('ABSPATH'))
  */
 
 define('ST_COOKIECONS_PLUGIN', plugin_dir_path(__FILE__));
+define('ST_COOKIECONS_SITE', home_url() . '/');
 const ST_COOKIECONS_FILE = __FILE__;
 const ST_COOKIECONS_INC = ST_COOKIECONS_PLUGIN . 'inc/';
 const ST_COOKIECONS_ADMIN = ST_COOKIECONS_INC . 'Admin/';
@@ -53,6 +54,9 @@ const ST_COOKIECONS_JS = ST_COOKIECONS_ASSET . 'js/';
 const ST_COOKIECONS_IMG = ST_COOKIECONS_ASSET . 'img/';
 const ST_COOKIECONS_VERSION = '1.0.0';
 const ST_COOKIECONS_VERSION_CODE = '1';
+const ST_COOKIECONS_SITE_PLUGIN = ST_COOKIECONS_SITE . 'wp-content/plugins/stechbd-cookiecons/';
+const ST_COOKIECONS_SITE_CSS = ST_COOKIECONS_SITE_PLUGIN . 'asset/css/';
+const ST_COOKIECONS_SITE_JS = ST_COOKIECONS_SITE_PLUGIN . 'asset/js/';
 
 require_once ST_COOKIECONS_INC . 'inc.php';
 

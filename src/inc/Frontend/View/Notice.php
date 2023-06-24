@@ -16,4 +16,4 @@
 
 
 ?>
-<h1>Notice: <?= get_option('stechbd_cookiecons_notice') ?></h1>
+<div class="stechbd-cookiecons">Notice: <?= get_option('stechbd_cookiecons_notice') ?></div>
