@@ -8,12 +8,34 @@
  * Author URI: https://www.stechbd.net
  * Author Email: product@stechbd.net
  * Created: June 20, 2023
- * Updated: June 24, 2023
+ * Updated: June 26, 2023
  */
 
 
 .stechbd-cookiecons {
-    color: #FFFFFF !important;
-    background: #CCCCCC !important;
-    padding: 5px !important;
+    color: #FFFFFF;
+    background: #2C3E50;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.stechbd-cookiecons > .notice {
+    padding: 5px;
+}
+
+.stechbd-cookiecons > .notice a:link {
+    color: #FFFFFF;
+}
+
+.stechbd-cookiecons > .close {
+    color: #2C3E50;
+    background: #FFFFFF;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    border-radius: 60% 50%;
+    text-align: center;
 }

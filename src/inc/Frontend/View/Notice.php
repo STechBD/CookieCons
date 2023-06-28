@@ -16,4 +16,11 @@
 
 
 ?>
-<div class="stechbd-cookiecons">Notice: <?= get_option('stechbd_cookiecons_notice') ?></div>
+<div class="stechbd-cookiecons">
+    <div class="notice">
+        <?= get_option('stechbd_cookiecons_notice') ?>
+    </div>
+    <div class="close">
+        <span class="dashicons dashicons-dismiss">x</span>
+    </div>
+</div>
