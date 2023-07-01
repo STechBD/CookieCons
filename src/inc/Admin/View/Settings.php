@@ -38,7 +38,7 @@ if(!defined('ABSPATH'))
 				</th>
 				<td>
 					<label>
-						<textarea placeholder="This website uses cookies to improve your experience. &lt;a href=&quot;<?php get_site_url() ?>/privacy-policy/&quot;&gt;Learn More&lt;/a&gt;" rows="4" cols="70" id="notice" name="notice"><?= get_option('stechbd_cookiecons_notice') ?></textarea>
+						<textarea placeholder="This website uses cookies to improve your experience. &lt;a href=&quot;<?= ST_COOKIECONS_SITE ?>privacy-policy/&quot;&gt;Learn More&lt;/a&gt;" rows="4" cols="70" id="notice" name="notice"><?= get_option('stechbd_cookiecons_notice') ?></textarea>
 					</label>
 				</td>
 			</tr>
