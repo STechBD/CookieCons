@@ -7,13 +7,14 @@
  * Description: CookieCons is a simple and lightweight cookie consent manager for WordPress.
  * Version: 1.0.0
  * Version Code: 1
+ * Since
  * Author: S Technologies Limited
  * Author URI: https://www.stechbd.net
  * Requires at least: 5.0.0
  * Tested up to: 6.2.2
  * Requires PHP: 8.0
  * Created: June 3, 2023
- * Updated: June 21, 2023
+ * Updated: July 2, 2023
  * Text Domain: stechbd-cookiecons
  * Domain Path: /languages
  * License: GPL v2 or later
@@ -29,17 +30,21 @@ if(!defined('ABSPATH'))
 
 /**
  * Plugin information.
- * @const string ST_COOKIECONS_VERSION
- * @const string ST_COOKIECONS_VERSION_CODE
  * @const string ST_COOKIECONS_PLUGIN
+ * @const string ST_COOKIECONS_SITE
+ * @const string ST_COOKIECONS_FILE
  * @const string ST_COOKIECONS_INC
  * @const string ST_COOKIECONS_ADMIN
  * @const string ST_COOKIECONS_FE
  * @const string ST_COOKIECONS_ASSETS
- * @const string ST_COOKIECONS_ASSETS_CSS
- * @const string ST_COOKIECONS_ASSETS_JS
- * @const string ST_COOKIECONS_ASSETS_IMG
- * @const string ST_COOKIECONS_ASSETS_FONTS
+ * @const string ST_COOKIECONS_CSS
+ * @const string ST_COOKIECONS_JS
+ * @const string ST_COOKIECONS_IMG
+ * @const string ST_COOKIECONS_VERSION
+ * @const string ST_COOKIECONS_VERSION_CODE
+ * @const string ST_COOKIECONS_SITE_PLUGIN
+ * @const string ST_COOKIECONS_SITE_CSS
+ * @const string ST_COOKIECONS_SITE_JS
  */
 
 define('ST_COOKIECONS_PLUGIN', plugin_dir_path(__FILE__));
@@ -60,6 +65,10 @@ const ST_COOKIECONS_SITE_JS = ST_COOKIECONS_SITE_PLUGIN . 'asset/js/';
 
 require_once ST_COOKIECONS_INC . 'inc.php';
 
-// Initialize the plugin.
 
+/**
+ * Initialize the plugin.
+ * @return void
+ * @since 1.0.0
+ */
 STechBD\CookieCons\Main::init();
