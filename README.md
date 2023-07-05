@@ -25,10 +25,8 @@ CookieCons is a simple and lightweight cookie consent manager for WordPress. It 
 1. Download the plugin as a zip file from the [releases page]() or from the [WordPress plugin directory](https://wordpress.org/plugins/CookieCons/).
 2. Upload the plugin to your WordPress site.
 3. Activate the plugin.
-4. Go to the CookieCons settings page and configure the plugin.
-5. Add the `[CookieCons]` shortcode to your cookie policy page.
-6. Done!
-7. (Optional) If you want to use the CookieCons widget, go to the Widgets page and add the CookieCons widget to your sidebar.
+4. (Optional) Go to the CookieCons settings page and configure the plugin.
+5. Done!
 
 ## Features
 
@@ -41,7 +39,7 @@ CookieCons is a simple and lightweight cookie consent manager for WordPress. It 
 
 ## Screenshots
 
-![CookieCons Settings](https://raw.githubusercontent.com/STechBD/CookieCons/master/assets/screenshot-1.png)
+![CookieCons Settings](https://raw.githubusercontent.com/STechBD/CookieCons/main/asset/screenshot.png)
 
 ## Changelog
 
