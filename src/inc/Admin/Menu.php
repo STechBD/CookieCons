@@ -14,18 +14,22 @@
  * Homepage: https://www.stechbd.net
  * Contact: product@stechbd.net
  * Created: June 8, 2023
- * Updated: July 2, 2023
+ * Updated: July 5, 2023
  */
+
 
 namespace STechBD\CookieCons\Admin;
 
 /**
  * The admin panel class file.
+ * @since 1.0.0
  */
 class Menu
 {
 	/**
 	 * Class constructor.
+	 * @return void
+	 * @since 1.0.0
 	 */
 	public function __construct()
 	{
@@ -36,6 +40,7 @@ class Menu
 	/**
 	 * Add admin menu.
 	 * @return void
+	 * @since 1.0.0
 	 */
 	public function add_admin_menu(): void
 	{
@@ -45,6 +50,7 @@ class Menu
 	/**
 	 * Admin index page.
 	 * @return void
+	 * @since 1.0.0
 	 */
 	public function admin_index(): void
 	{
@@ -55,6 +61,7 @@ class Menu
 	/**
 	 * Dispatch actions.
 	 * @return void
+	 * @since 1.0.0
 	 */
 	public function dispatch_actions(): void
 	{

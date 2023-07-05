@@ -14,7 +14,7 @@
  * Tested up to: 6.2.2
  * Requires PHP: 8.0
  * Created: June 3, 2023
- * Updated: July 2, 2023
+ * Updated: July 5, 2023
  * Text Domain: stechbd-cookiecons
  * Domain Path: /languages
  * License: GPL v2 or later
@@ -22,7 +22,10 @@
  */
 
 
-// Exit if accessed directly.
+/**
+ * Exit if accessed directly.
+ * @since 1.0.0
+ */
 if(!defined('ABSPATH'))
 {
 	exit;
@@ -45,6 +48,7 @@ if(!defined('ABSPATH'))
  * @const string ST_COOKIECONS_SITE_PLUGIN
  * @const string ST_COOKIECONS_SITE_CSS
  * @const string ST_COOKIECONS_SITE_JS
+ * @since 1.0.0
  */
 
 define('ST_COOKIECONS_PLUGIN', plugin_dir_path(__FILE__));

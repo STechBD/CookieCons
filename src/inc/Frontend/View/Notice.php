@@ -14,7 +14,23 @@
  * Homepage: https://www.stechbd.net
  * Contact: product@stechbd.net
  * Created: June 21, 2023
- * Updated: July 2, 2023
+ * Updated: July 5, 2023
+ */
+
+
+/**
+ * Exit if accessed directly.
+ * @since 1.0.0
+ */
+if(!defined('ABSPATH'))
+{
+	exit;
+}
+
+
+/**
+ * The frontend notice view file.
+ * @since 1.0.0
  */
 
 
@@ -24,6 +40,6 @@
         <?= get_option('stechbd_cookiecons_notice') ?>
     </div>
     <div class="close">
-        <span class="dashicons dashicons-dismiss"></span>
+        Got it
     </div>
 </div>

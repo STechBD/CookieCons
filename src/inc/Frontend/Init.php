@@ -43,7 +43,8 @@ class Init
 	{
 	    new Asset();
 	    
-		wp_enqueue_style('stechbd-cookiecons-style');
-		wp_enqueue_script('stechbd-cookiecons-script');
+		wp_enqueue_style('st-cookiecons-style');
+		wp_enqueue_script('jquery');
+		wp_enqueue_script('st-cookiecons-script');
 	}
 }

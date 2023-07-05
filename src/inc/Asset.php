@@ -14,7 +14,7 @@
  * Homepage: https://www.stechbd.net
  * Contact: product@stechbd.net
  * Created: June 29, 2023
- * Updated: July 2, 2023
+ * Updated: July 5, 2023
  */
 
 
@@ -22,6 +22,7 @@ namespace STechBD\CookieCons;
 
 /**
  * The asset loader class.
+ * @since 1.0.0
  */
 class Asset
 {
@@ -79,6 +80,7 @@ class Asset
     {
         $style = $this -> style();
         $script = $this -> script();
+        
         
         foreach ($style as $name => $value)
         {
