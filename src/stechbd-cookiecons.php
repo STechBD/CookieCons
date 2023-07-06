@@ -17,8 +17,8 @@
  * Updated: July 6, 2023
  * Text Domain: stechbd-cookiecons
  * Domain Path: /languages
- * License: GPL v2 or later
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * License: GPL v3
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  */
 
 

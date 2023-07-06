@@ -52,7 +52,7 @@ Will be added soon.
 
 ## License
 
-CookieCons is licensed under the [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html).
+CookieCons is licensed under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).
 
 ## Donate
 
