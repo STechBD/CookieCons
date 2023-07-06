@@ -14,7 +14,7 @@
  * Tested up to: 6.2.2
  * Requires PHP: 8.0
  * Created: June 3, 2023
- * Updated: July 5, 2023
+ * Updated: July 6, 2023
  * Text Domain: stechbd-cookiecons
  * Domain Path: /languages
  * License: GPL v2 or later
@@ -28,7 +28,7 @@
  */
 if(!defined('ABSPATH'))
 {
-	exit;
+	die('<title>Access Denied | CookieCons by STechBD.Net</title><h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>');
 }
 
 /**
