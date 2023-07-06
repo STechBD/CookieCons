@@ -68,18 +68,20 @@ None yet.
 
 ## Support
 
+* [Home Page](https://www.stechbd.net/project/CookieCons/)
+* [Documentation](https://docs.stechbd.net/CookieCons/)
 * [GitHub Issues](https://github.com/STechBD/CookieCons/issues)
 * [WordPress Support Forum](https://wordpress.org/support/plugin/CookieCons/)
 * [Email](mailto:product@stechbd.net)
-* [Support Page](https://stechbd.net/support)
-* [Contact Form](https://stechbd.net/contact)
+* [Support Page](https://wwwstechbd.net/support)
+* [Contact Form](https://www.stechbd.net/contact)
 * [Facebook](https://www.facebook.com/STechBD.Net)
 * [Twitter](https://twitter.com/STechBD_Net)
 * [LinkedIn](https://www.linkedin.com/company/STechBD)
 
 ## Hire Us
 
-* [WordPress Development or Web App Development](https://stechbd.net/web-development)
+* [WordPress Development or Web App Development](https://www.stechbd.net/web-development)
 
 ## Contribute
 
@@ -87,13 +89,13 @@ None yet.
 
 ## Privacy Policy
 
-* [Privacy Policy](https://stechbd.net/privacy)
+* [Privacy Policy](https://www.stechbd.net/privacy)
 
 ## Terms & Conditions
 
-* [Terms & Conditions](https://stechbd.net/terms)
-* [Refund Policy](https://stechbd.net/refund-policy)
-* [Software License Agreement](https://stechbd.net/software-license-agreement)
+* [Terms & Conditions](https://www.stechbd.net/terms)
+* [Refund Policy](https://www.stechbd.net/refund-policy)
+* [Software License Agreement](https://www.stechbd.net/software-license-agreement)
 
 # Frequently Asked Questions
 
@@ -115,4 +117,4 @@ A cookie consent manager is a tool that helps you comply with the EU GDPR cookie
 
 ## Copyright
 
-© 2013-23 S Technologies Limited. All rights reserved.
+© 2013-23 **[S Technologies Limited](https://www.stechbd.net)**. All rights reserved.
