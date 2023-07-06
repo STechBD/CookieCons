@@ -2,29 +2,46 @@
 
 
 /**
- * Plugin Name: CookieCons by STechBD.Net
- * Plugin URI: https://project.stechbd.net/cookiecons/
- * Description: CookieCons is a simple and lightweight cookie consent manager for WordPress.
+ * Project: CookieCons
+ * Description: CookieCons is a simple and lightweight cookie consent plugin for WordPress.
  * Version: 1.0.0
  * Version Code: 1
- * Author: S Technologies Limited
- * Author URI: https://www.stechbd.net
- * Author Email: product@stechbd.net
+ * Since: 1.0.0
+ * Author: Md. Ashraful Alam Shemul
+ * Email: ceo@stechbd.net
+ * Website: https://www.stechbd.net/project/CookieCons/
+ * Developer: S Technologies Limited
+ * Homepage: https://www.stechbd.net
+ * Contact: product@stechbd.net
  * Created: June 15, 2023
- * Updated: June 16, 2023
+ * Updated: July 6, 2023
  */
 
 
 namespace STechBD\CookieCons\Admin;
 
 /**
+ * Exit if accessed directly.
+ *
+ * @since 1.0.0
+ */
+if(!defined('ABSPATH'))
+{
+	die('<title>Access Denied | CookieCons by STechBD.Net</title><h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>');
+}
+
+/**
  * The admin page class file.
+ *
+ * @since 1.0.0
  */
 class Settings
 {
 	/**
-	 * Settings page.
+	 * Method to load the Settings page view.
+	 *
 	 * @return void
+	 * @since 1.0.0
 	 */
 	public function settings_page(): void
 	{
@@ -32,8 +49,10 @@ class Settings
 	}
 
 	/**
-	 * Form handler.
+	 * Method to handle the submission from admin Settings page.
+	 *
 	 * @return void
+	 * @since 1.0.0
 	 */
 	public function form_handler(): void
 	{

@@ -1,6 +1,6 @@
 # CookieCons - Cookie Consent Manager for WordPress
 
-CookieCons is a simple and lightweight cookie consent manager for WordPress. It is a plugin that helps you comply with the EU GDPR cookie law and CCPA regulations. It is compatible with any WordPress theme and any WordPress version. It is also compatible with any browser, any device, and any operating system.
+CookieCons is a simple and lightweight cookie consent plugin for WordPress. It is a free and opensource plugin that helps you comply with the EU GDPR cookie law and CCPA regulations. It is compatible with any WordPress theme and any WordPress version. It is also compatible with any browser, any device, and any operating system.
 
 It is compatible with other WordPress plugin because it uses 
 
@@ -11,7 +11,6 @@ It is compatible with other WordPress plugin because it uses
 * [Screenshots](#screenshots)
 * [Changelog](#changelog)
 * [License](#license)
-* [Credits](#credits)
 * [Donate](#donate)
 * [Author](#author)
 * [Contributors](#contributors)
@@ -45,7 +44,7 @@ It is compatible with other WordPress plugin because it uses
 
 ## Changelog
 
-### 1.0.0
+### v1.0.0 (July 7, 2023)
 
 * Initial release.
 
@@ -56,10 +55,6 @@ Will be added soon.
 ## License
 
 CookieCons is licensed under the [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html).
-
-## Credits
-
-* [jQuery](https://jquery.com/)
 
 ## Donate
 
@@ -86,7 +81,7 @@ None yet.
 
 ## Hire Us
 
-* [WordPress Development or Web App Development](https://stechbd.net/custom-web-development)
+* [WordPress Development or Web App Development](https://stechbd.net/web-development)
 
 ## Contribute
 

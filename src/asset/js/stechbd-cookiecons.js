@@ -1,12 +1,12 @@
 /**
  * Project: CookieCons
- * Description: CookieCons is a simple and lightweight cookie consent manager for WordPress.
+ * Description: CookieCons is a simple and lightweight cookie consent plugin for WordPress.
  * Version: 1.0.0
  * Version Code: 1
  * Since: 1.0.0
  * Author: Md. Ashraful Alam Shemul
  * Email: ceo@stechbd.net
- * Website: https://project.stechbd.net/cookiecons/
+ * Website: https://www.stechbd.net/project/CookieCons/
  * Developer: S Technologies Limited
  * Homepage: https://www.stechbd.net
  * Contact: product@stechbd.net
@@ -17,6 +17,7 @@
 
 /**
  * Use $ code inside this to avoid "$ is not defined" error.
+ *
  * @param {function} $
  * @returns {void}
  * @since 1.0.0
@@ -26,6 +27,7 @@
 	
 	/**
 	 * Function to fire when the document is ready.
+	 *
 	 * @returns {void}
 	 * @since 1.0.0
 	 */
@@ -38,6 +40,7 @@
 
 		/**
 		 * Function to accept cookies.
+		 *
 		 * @returns {void}
 		 * @since 1.0.0
 		 */
@@ -49,6 +52,7 @@
 
 	/**
 	 * Function to set a cookie.
+	 *
 	 * @param {string} name
 	 * @param {string} value
 	 * @returns {void}
@@ -63,6 +67,7 @@
 
 	/**
 	 * Function to retrieve the value of a cookie.
+	 *
 	 * @param {string} name
 	 * @returns {string}
 	 * @since 1.0.0
