@@ -38,7 +38,7 @@ CookieCons is a simple and lightweight cookie consent plugin for WordPress. It i
 
 ## Screenshots
 
-![CookieCons Settings](https://raw.githubusercontent.com/STechBD/CookieCons/main/asset/screenshot.png)
+![CookieCons Settings](https://raw.githubusercontent.com/STechBD/CookieCons/main/asset/Screenshot.png)
 
 ## Changelog
 
