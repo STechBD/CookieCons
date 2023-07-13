@@ -73,7 +73,7 @@ None yet.
 * [GitHub Issues](https://github.com/STechBD/CookieCons/issues)
 * [WordPress Support Forum](https://wordpress.org/support/plugin/CookieCons/)
 * [Email](mailto:product@stechbd.net)
-* [Support Page](https://wwwstechbd.net/support)
+* [Support Page](https://www.stechbd.net/support)
 * [Contact Form](https://www.stechbd.net/contact)
 * [Facebook](https://www.facebook.com/STechBD.Net)
 * [Twitter](https://twitter.com/STechBD_Net)
