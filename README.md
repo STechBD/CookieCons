@@ -42,7 +42,7 @@ CookieCons is a simple and lightweight cookie consent plugin for WordPress. It i
 
 ## Changelog
 
-### v1.0.0 (July 7, 2023)
+### v1.0.0 (July 21, 2023)
 
 * Initial release.
 
@@ -97,21 +97,21 @@ None yet.
 * [Refund Policy](https://www.stechbd.net/refund-policy)
 * [Software License Agreement](https://www.stechbd.net/software-license-agreement)
 
-# Frequently Asked Questions
+## Frequently Asked Questions
 
-## What is a cookie?
+### What is a cookie?
 
 A cookie is a small piece of data that a website asks your browser to store on your computer or mobile device. The cookie allows the website to "remember" your actions or preferences over time.
 
-## What is the EU GDPR cookie law?
+### What is the EU GDPR cookie law?
 
 The EU GDPR cookie law is a piece of privacy legislation that requires websites to get consent from visitors to store or retrieve any information on a computer, smartphone, or tablet.
 
-## What is CCPA?
+### What is CCPA?
 
 The California Consumer Privacy Act (CCPA) is a state statute intended to enhance privacy rights and consumer protection for residents of California, United States.
 
-## What is a cookie consent manager?
+### What is a cookie consent manager?
 
 A cookie consent manager is a tool that helps you comply with the EU GDPR cookie law and CCPA regulations.
 
