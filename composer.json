@@ -1,5 +1,6 @@
 {
   "name": "stechbd/cookiecons",
+  "version": "1.0.1",
   "description": "A WordPress plugin to show cookie consent.",
   "type": "wordpress-plugin",
   "license": "GPLv3",
@@ -40,13 +41,12 @@
 	}
   ],
   "minimum-stability": "stable",
-  "require": {
-	"php": ">=7.4"
-  },
+  "require": {},
+  "require-dev": {},
   "extra": {
 	"wordpress-plugin": {
 	  "name": "CookieCons",
-	  "version": "1.0.0",
+	  "version": "1.0.1",
 	  "textdomain": "stechbd-cookiecons",
 	  "domain-path": "languages",
 	  "main-file": "stechbd-cookiecons.php",
