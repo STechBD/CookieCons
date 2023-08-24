@@ -25,8 +25,7 @@ namespace STechBD\CookieCons\Admin;
  *
  * @since 1.0.0
  */
-if(!defined('ABSPATH'))
-{
+if (!defined('ABSPATH')) {
 	die('<title>Access Denied | CookieCons by STechBD.Net</title><h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>');
 }
 
@@ -45,7 +44,7 @@ class Menu
 	 */
 	public function __construct()
 	{
-		$this -> dispatch_actions();
+		$this->dispatch_actions();
 		add_action('admin_menu', [$this, 'add_admin_menu']);
 	}
 
@@ -81,6 +80,6 @@ class Menu
 	public function admin_index(): void
 	{
 		$settings = new Settings();
-		$settings -> settings_page();
+		$settings->settings_page();
 	}
 }

@@ -25,8 +25,7 @@ namespace STechBD\CookieCons\Admin;
  *
  * @since 1.0.0
  */
-if(!defined('ABSPATH'))
-{
+if (!defined('ABSPATH')) {
 	die('<title>Access Denied | CookieCons by STechBD.Net</title><h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>');
 }
 

@@ -25,8 +25,7 @@ namespace STechBD\CookieCons\Admin;
  *
  * @since 1.0.0
  */
-if(!defined('ABSPATH'))
-{
+if (!defined('ABSPATH')) {
 	die('<title>Access Denied | CookieCons by STechBD.Net</title><h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>');
 }
 
@@ -56,35 +55,26 @@ class Settings
 	 */
 	public function form_handler(): void
 	{
-		if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submitNotice']))
-		{
-			if(!wp_verify_nonce($_POST['_wpnonce'], 'stechbd-cookiecons'))
-			{
+		if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submitNotice'])) {
+			if (!wp_verify_nonce($_POST['_wpnonce'], 'stechbd-cookiecons')) {
 				wp_die('<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>', 'CookieCons Error');
 			}
 
-			if(!current_user_can('manage_options'))
-			{
+			if (!current_user_can('manage_options')) {
 				wp_die('<h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>', 'CookieCons Error');
 			}
 
 			$notice = get_option('stechbd_cookiecons_notice');
 			$noticeVal = wp_unslash($_POST['notice']);
 
-			if(!empty($noticeVal))
-			{
-				if($notice === $noticeVal)
-				{
+			if (!empty($noticeVal)) {
+				if ($notice === $noticeVal) {
 					add_settings_error('stechbd-cookiecons', 'error', 'Same notice already exists!');
-				}
-				else
-				{
+				} else {
 					update_option('stechbd_cookiecons_notice', $noticeVal);
 					add_settings_error('stechbd-cookiecons', 'success', 'Notice updated successfully!', 'updated');
 				}
-			}
-			else
-			{
+			} else {
 				add_settings_error('stechbd-cookiecons', 'error', 'Please insert a value!');
 			}
 		}

@@ -23,8 +23,7 @@
  *
  * @since 1.0.0
  */
-if(!defined('ABSPATH'))
-{
+if (!defined('ABSPATH')) {
 	die('<title>Access Denied | CookieCons by STechBD.Net</title><h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>');
 }
 
@@ -38,10 +37,10 @@ if(!defined('ABSPATH'))
 
 ?>
 <div class="stechbd-cookiecons">
-    <div class="notice">
-        <?= get_option('stechbd_cookiecons_notice') ?>
-    </div>
-    <div class="close">
-        Got it
-    </div>
+	<div class="notice">
+		<?= get_option('stechbd_cookiecons_notice') ?>
+	</div>
+	<div class="close">
+		Got it
+	</div>
 </div>

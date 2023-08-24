@@ -19,6 +19,7 @@
 
 
 namespace STechBD\CookieCons\Frontend;
+
 use STechBD\CookieCons\Asset;
 
 /**
@@ -26,8 +27,7 @@ use STechBD\CookieCons\Asset;
  *
  * @since 1.0.0
  */
-if(!defined('ABSPATH'))
-{
+if (!defined('ABSPATH')) {
 	die('<title>Access Denied | CookieCons by STechBD.Net</title><h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>');
 }
 
@@ -47,7 +47,7 @@ class Init
 	public function __construct()
 	{
 		add_action('wp_enqueue_scripts', [$this, 'enqueue_scripts']);
-		
+
 		new Notice();
 	}
 
@@ -59,8 +59,8 @@ class Init
 	 */
 	public function enqueue_scripts(): void
 	{
-	    new Asset();
-	    
+		new Asset();
+
 		wp_enqueue_style('st-cookiecons-style');
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('st-cookiecons-script');

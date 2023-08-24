@@ -25,8 +25,7 @@ namespace STechBD\CookieCons;
  *
  * @since 1.0.0
  */
-if(!defined('ABSPATH'))
-{
+if (!defined('ABSPATH')) {
 	die('<title>Access Denied | CookieCons by STechBD.Net</title><h1>CookieCons by STechBD.Net</h1><p>Access denied for security reasons.</p>');
 }
 
@@ -37,20 +36,20 @@ if(!defined('ABSPATH'))
  */
 class Main
 {
-    /**
-     * The class constructor method to register activation and deactivation hooks and to load the 'init_plugin' method.
-     *
-     * It is prevented from being called more than once by using the 'singleton' design pattern.
-     *
-     * @return void
-     * @since 1.0.0
-     */
-    private function __construct()
-    {
-        register_activation_hook(ST_COOKIECONS_FILE, [$this, 'activate']);
+	/**
+	 * The class constructor method to register activation and deactivation hooks and to load the 'init_plugin' method.
+	 *
+	 * It is prevented from being called more than once by using the 'singleton' design pattern.
+	 *
+	 * @return void
+	 * @since 1.0.0
+	 */
+	private function __construct()
+	{
+		register_activation_hook(ST_COOKIECONS_FILE, [$this, 'activate']);
 		register_deactivation_hook(ST_COOKIECONS_FILE, [$this, 'deactivate']);
-        add_action('plugins_loaded', [$this, 'init_plugin']);
-    }
+		add_action('plugins_loaded', [$this, 'init_plugin']);
+	}
 
 	/**
 	 * Method to initialize the plugin and to load the class constructor method.
@@ -58,43 +57,40 @@ class Main
 	 * @return Main The class instance.
 	 * @since 1.0.0
 	 */
-    public static function init(): Main
-    {
-	    $instance = null;
+	public static function init(): Main
+	{
+		$instance = null;
 
-	    if(!$instance)
-		{
+		if (!$instance) {
 			$instance = new self();
 		}
 
 		return $instance;
-    }
+	}
 
-    /**
-     * Method to run plugin activation activities.
-     *
-     * @return void
-     * @since 1.0.0
-     */
-    public function activate(): void
-    {
-        $installed = get_option('stechbd_cookiecons_installed');
+	/**
+	 * Method to run plugin activation activities.
+	 *
+	 * @return void
+	 * @since 1.0.0
+	 */
+	public function activate(): void
+	{
+		$installed = get_option('stechbd_cookiecons_installed');
 		$notice = get_option('stechbd_cookiecons_notice');
 		$noticeValue = 'This website uses cookies to improve your experience. <strong><a href="' . ST_COOKIECONS_SITE . 'privacy-policy/">Learn More</a></strong>';
 
-        if(!$installed)
-        {
-            update_option('stechbd_cookiecons_installed', time());
-        }
+		if (!$installed) {
+			update_option('stechbd_cookiecons_installed', time());
+		}
 
-        update_option('stechbd_cookiecons_version', ST_COOKIECONS_VERSION);
-        update_option('stechbd_cookiecons_version_code', ST_COOKIECONS_VERSION_CODE);
+		update_option('stechbd_cookiecons_version', ST_COOKIECONS_VERSION);
+		update_option('stechbd_cookiecons_version_code', ST_COOKIECONS_VERSION_CODE);
 
-		if(!$notice)
-		{
+		if (!$notice) {
 			add_option('stechbd_cookiecons_notice', $noticeValue);
 		}
-    }
+	}
 
 	/**
 	 * Method to run plugin deactivation activities.
@@ -107,23 +103,20 @@ class Main
 		// To be added later.
 	}
 
-    /**
-     * Method to initialize the plugin.
-     *
-     * It loads the Admin\Init class if the user is in the admin panel, otherwise it loads the Frontend\Init class.
-     *
-     * @return void
-     * @since 1.0.0
-     */
-    public function init_plugin(): void
-    {
-		if(is_admin())
-		{
+	/**
+	 * Method to initialize the plugin.
+	 *
+	 * It loads the Admin\Init class if the user is in the admin panel, otherwise it loads the Frontend\Init class.
+	 *
+	 * @return void
+	 * @since 1.0.0
+	 */
+	public function init_plugin(): void
+	{
+		if (is_admin()) {
 			new Admin\Init();
-		}
-		else
-		{
+		} else {
 			new Frontend\Init();
 		}
-    }
+	}
 }

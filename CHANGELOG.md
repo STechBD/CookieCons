@@ -29,7 +29,7 @@ Version 1.0.1 is a patch release of CookieCons.
 
 ### Affected Files
 
-- 
+-
 
 ## Version 1.0.0
 

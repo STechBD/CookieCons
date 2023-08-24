@@ -22,16 +22,16 @@
  * @returns {void}
  * @since 1.0.0
  */
-;(function($) {
+;(function ($) {
 	'use strict';
-	
+
 	/**
 	 * Function to fire when the document is ready.
 	 *
 	 * @returns {void}
 	 * @since 1.0.0
 	 */
-	$(document).ready(function() {
+	$(document).ready(function () {
 		const cookieValue = getCookie('stechbd-cookiecons');
 
 		if (cookieValue === 'accepted') {
@@ -44,7 +44,7 @@
 		 * @returns {void}
 		 * @since 1.0.0
 		 */
-		$('.stechbd-cookiecons .close').click(function() {
+		$('.stechbd-cookiecons .close').click(function () {
 			setCookie('stechbd-cookiecons', 'accepted');
 			$('.stechbd-cookiecons').fadeOut();
 		});

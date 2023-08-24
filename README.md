@@ -1,6 +1,9 @@
 # CookieCons - Cookie Consent Manager for WordPress
 
-CookieCons is a simple and lightweight cookie consent plugin for WordPress. It is a free and opensource plugin that helps you comply with the EU GDPR cookie law and CCPA regulations. It is compatible with any WordPress theme and any WordPress version. It is also compatible with any browser, any device, and any operating system.
+CookieCons is a simple and lightweight cookie consent plugin for WordPress.
+It is a free and opensource plugin that helps you comply with the EU GDPR cookie law and CCPA regulations.
+It is compatible with any WordPress theme and any WordPress version.
+It is also compatible with any browser, any device, and any operating system.
 
 ## Table of Contents
 
@@ -21,7 +24,8 @@ CookieCons is a simple and lightweight cookie consent plugin for WordPress. It i
 
 ## Installation
 
-1. Download the plugin as a zip file from the [releases page]() or from the [WordPress plugin directory](https://wordpress.org/plugins/CookieCons/).
+1. Download the plugin as a zip file from the [release page](https://github.com/STechBD/CookieCons/releases) or from
+   the [WordPress plugin directory](https://wordpress.org/plugins/CookieCons/).
 2. Upload the plugin to your WordPress site.
 3. Activate the plugin.
 4. (Optional) Go to the CookieCons settings page and configure the plugin.
@@ -103,15 +107,18 @@ None yet.
 
 ### What is a cookie?
 
-A cookie is a small piece of data that a website asks your browser to store on your computer or mobile device. The cookie allows the website to "remember" your actions or preferences over time.
+A cookie is a small piece of data that a website asks your browser to store on your computer or mobile device. The
+cookie allows the website to "remember" your actions or preferences over time.
 
 ### What is the EU GDPR cookie law?
 
-The EU GDPR cookie law is a piece of privacy legislation that requires websites to get consent from visitors to store or retrieve any information on a computer, smartphone, or tablet.
+The EU GDPR cookie law is a piece of privacy legislation that requires websites to get consent from visitors to store or
+retrieve any information on a computer, smartphone, or tablet.
 
 ### What is CCPA?
 
-The California Consumer Privacy Act (CCPA) is a state statute intended to enhance privacy rights and consumer protection for residents of California, United States.
+The California Consumer Privacy Act (CCPA) is a state statute intended to enhance privacy rights and consumer protection
+for residents of California, United States.
 
 ### What is a cookie consent manager?
 
@@ -119,4 +126,4 @@ A cookie consent manager is a tool that helps you comply with the EU GDPR cookie
 
 ## Copyright
 
-© 2013-23 **[S Technologies Limited](https://www.stechbd.net)**. All rights reserved.
+© 2013-23 **[S Technologies](https://www.stechbd.net)**. All rights reserved.
